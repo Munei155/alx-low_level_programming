@@ -1,18 +1,13 @@
 #include "main.h"
-
 /**
- *_strlen-Finds the length of a string.
- *@s:String pointer to the string whose length is to be found.
- *Return: returns the length of the string.
- */
-
-int _strlen(char *s)
+* _puts - prints a string, followed by a new line, to stdout
+* @str: string to print
+*/
+void _puts(char *str)
 {
-	int p = 0;
-	/ incremeant up to when the last character is NULL, '\0' /
-	while (*(s + p) != 0)
+	while (*str != '\0')
 	{
-		p++;
+		_putchar(*str++);
 	}
-	return (p);
+		_putchar('\n');
 }
